@@ -177,7 +177,7 @@ const HomePage = (props: Props) => {
       runPrediction();
     }, 1000) 
     return () => clearInterval(interval);
-  }, [webcamRef.current, model, mirrored, autoRecordEnabled, volume])
+  }, [webcamRef.current, model, mirrored, autoRecordEnabled, volume,runPrediction])
 
   return (
     <div className='flex h-screen'>
